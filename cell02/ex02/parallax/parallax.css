@@ -1,0 +1,56 @@
+/* Viewport Meta Tag */
+@viewport {
+    width: device-width;
+    initial-scale: 1.0;
+  }
+  
+  /* Parallax Styles */
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .parallax {
+    height: 100%;
+    background-color: #e6e6;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+  }
+  
+  .parallax-item {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e6e;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  
+  .parallax-bg1 {
+    background-image: url('https://media.istockphoto.com/id/664373658/pt/foto/alien.jpg?s=612x612&w=0&k=20&c=Nv6G-TRCZ7M-kAU4CTyndk5Fdg9ACAGzUWNaQ510Fls=');
+    background-size: cover;      /*  faz com que a imagem de fundo preencha todo o espaço disponível no elemento*/
+    background-position: center;    /* posicionada no centro do elemento  */
+    background-attachment: fixed; /* a imagem de fundo fica fixa em relação á janela de vi
+    visualição(viewport) do navegador */
+  }
+  
+  .parallax-black {
+    background-color: #333;
+    padding: 50px;
+  }
+  
+  .parallax-bg2 {
+    background-image: url('https://www.shutterstock.com/image-photo/aliens-creature-forest-600nw-2109578969.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+   /* As classes .parallax-bg1 e .parallax-bg2 usam imagens de fundo com background-size: 
+   cover; e background-position: center; para cobrir todo o elemento. 
+   A background-attachment: fixed; faz com que as imagens de fundo fiquem fixas, 
+   criando o efeito de paralaxe. */

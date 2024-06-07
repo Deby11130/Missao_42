@@ -1,0 +1,20 @@
+/* Viewport Meta Tag */
+@viewport {
+    width: device-width;
+    initial-scale: 1.0;
+  }
+  
+  /* Estilo do Balão */
+  .balloon {
+    width: 200px;
+    height: 200px;
+    background-color: #ff0000;
+    border-radius: 80%;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-80%, -80%);
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  

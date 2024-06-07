@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudança de Cor de Fundo</title>
+  <link rel="stylesheet" href="background.css">
+  
+</head>
+<body id="body">
+  <div class="container">
+    <h1>Clique no botão para mudar a cor de fundo</h1>
+    <button id="changeColorBtn">Mudar Cor</button>
+  </div>
+  <script>
+    const body = document.getElementById('body');
+const changeColorBtn = document.getElementById('changeColorBtn');
+
+ /* O Math.random() * 16 gera um número aleatório entre 0 e 16 (exclusive),
+  que é então arredondado para baixo usando Math.floor() para obter um índice 
+  válido na string letters.*/
+
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+/* Então, essa função gera uma cor hexadecimal aleatória no formato #RRGGBB, 
+onde cada par de caracteres representa um valor entre 00 e FF (em hexadecimal)
+ para os componentes de vermelho, verde e azul, respectivamente.*/
+
+changeColorBtn.addEventListener('click', () => {
+  const randomColor = getRandomColor();
+  body.style.backgroundColor = randomColor;
+});
+  </script>
+
+
+
+</body>
+</html>

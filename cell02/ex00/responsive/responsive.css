@@ -1,0 +1,37 @@
+
+
+
+@viewport {
+    width: device-width;
+    initial-scale: 1.0;
+    
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  .cell1 {
+    background-color: #008000;
+  }
+  
+  .cell2 {
+    background-color: #ADD8E6;
+  }
+  
+  /* Responsivo Styles */
+  @media (max-width: 768px) {
+    .cell1, .cell2 {
+      display: block;
+      width: 100%;
+      flex-wrap:wrap ;
+      margin: 0%;
+    }
+  }
+  

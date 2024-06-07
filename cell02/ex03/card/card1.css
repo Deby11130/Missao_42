@@ -1,0 +1,81 @@
+body {
+    display: flex;      /* permite ser alinhado e posicionados */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .card {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;  /* Bordas arredondadas */
+    overflow: hidden;  /* Oculta conteúdo que exceda as dimensões */
+  }
+  
+  .card-header {
+    background-color: #984caf;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-content {
+    padding: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  /* Oganiza filhos do cartão em uma coluna */
+    align-items: center;  /* Centraliza verticalmente os filhos do cartão*/
+  }
+  
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;  /* transforma a foto em circulo */
+    object-fit: cover; /* Prenche espaço disponivel*/
+    margin-bottom: 16px;
+  }
+  
+  .username {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .description {
+    color: #666;
+    margin-bottom: 16px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;  /* Centraliza horizoltalmente os links das redes sociais*/
+    margin-top: 16px;
+  }
+  
+  .social-links img {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+  }
+  
+  .contact-button {
+    display: block;
+    background-color: #af4c99;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 16px;
+  }
+  
+  .contact-button:hover {
+    background-color: #45a049; /*altera a cor*/
+  }
+  
